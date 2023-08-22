@@ -50,7 +50,8 @@
             <button id = "b9" onclick = "click9()"></button>
         </div>
 	<br>
-	<a href = "location.reload();">RESTART GAME</a>
+	<br>
+	<a onclick = "location.reload();">RESTART GAME</a>
         <a id = "customnames" onclick = "custom()">CUSTOM NAMES</a>
     <style>
       * {
@@ -112,6 +113,10 @@ button:active {
     cursor:pointer;
     font-size:22px;
     transition:all 0.25s;
+}
+
+a {
+    text-decoration:none;
 }
 
 #customnames:hover {
