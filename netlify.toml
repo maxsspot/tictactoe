@@ -1,6 +1,11 @@
 [[headers]]
     for = "/*"
     [headers.values]
+        X-Frame-Options = "deny"
+        X-XSS-Protection = "1"
+        X-Content-Type-Options = "nosniff"
+        Referrer-Policy = "no-referrer"
+        
         Cross-Origin-Opener-Policy = "same-origin"
         Cross-Origin-Resource-Policy = "same-origin"
         Cross-Origin-Embedder-Policy = "require-corp"
