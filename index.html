@@ -20,7 +20,7 @@
             <br>
             <br>
             <br>
-            <button id = "save" disabled>Save</button>
+            <button id = "save" onclick = "saved()" disabled>Save</button>
             <br>
             <button id = "cancel" onclick = "cancel()">Cancel</button>
         </div>
@@ -300,14 +300,18 @@ setInterval(function () {
 function custom () {
     document.getElementById ("custom").style.opacity = "1.0";
     document.getElementById ("custom").style.pointerEvents = "all";
-    localStorage.setItem ("xname",xname);
-    localStorage.setItem ("oname",oname);
 }
 
 function cancel () {
     document.getElementById ("custom").style.opacity = "0.0";
     document.getElementById ("custom").style.pointerEvents = "none";
 }
+
+	    function saved () {
+		localStorage.setItem ("xname",xname);
+    localStorage.setItem ("oname",oname);
+		    cancel();
+	    }
     </script>
     </body>
 </html>
