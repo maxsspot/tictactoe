@@ -300,6 +300,8 @@ setInterval(function () {
 function custom () {
     document.getElementById ("custom").style.opacity = "1.0";
     document.getElementById ("custom").style.pointerEvents = "all";
+    localStorage.setItem ("xname",xname);
+    localStorage.setItem ("oname",oname);
 }
 
 function cancel () {
