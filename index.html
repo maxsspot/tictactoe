@@ -24,7 +24,7 @@
             <br>
             <button id = "cancel" onclick = "cancel()">Cancel</button>
 		<br>
-		<a>Reset</a>
+		<a onclick = "resetnames()">Reset names</a>
         </div>
         <br>
         <br>
@@ -285,6 +285,7 @@ function click9 () {
 }
 
 // ----------------------- //
+	    
 xname.value = "X";
 oname.value = "O";
 	    
@@ -323,6 +324,11 @@ function saved () {
     localStorage.setItem ("xname",document.getElementById ("xname").value);
     localStorage.setItem ("oname",document.getElementById ("oname").value);
     cancel();
+}
+
+function resetnames () {
+	document.getElementById ("xname").value = "X";
+	document.getElementById ("oname").value = "O";
 }
     </script>
     </body>
