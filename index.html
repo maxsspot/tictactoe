@@ -279,7 +279,9 @@ function click9 () {
 }
 
 // ----------------------- //
-
+xname.value = "X";
+oname.value = "O";
+	    
 setInterval(function () {
     if (turn == "0") {
         document.getElementById ("letters").innerHTML = document.getElementById ("xname").value;
@@ -289,9 +291,6 @@ setInterval(function () {
     /////////////////////
     var xname = document.getElementById ("xname");
     var oname = document.getElementById ("oname");
-
-    xname.value = "X";
-    oname.value = "O";
 	
     if (xname.value != "" && oname.value != "") {
         document.getElementById ("save").disabled = false;
