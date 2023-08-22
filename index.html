@@ -345,6 +345,8 @@ function cancel () {
     document.getElementById ("custom").style.pointerEvents = "none";
     document.getElementById ("customnames").style.opacity = "1.0";
     document.getElementById ("customnames").style.pointerEvents = "all";
+    document.getElementById ("xname").value = localStorage.getItem ("xname");
+    document.getElementById ("oname").value = localStorage.getItem ("oname");
 }
 
 function saved () {
