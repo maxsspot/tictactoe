@@ -309,9 +309,13 @@ function click9 () {
 
 // ----------------------- //
 	    
-document.getElementById ("xname").value = "X";
-document.getElementById ("oname").value = "O";
-	    
+if (localStorage.getItem("xname") && localStorage.getItem("yname")) {
+    
+} else {
+    document.getElementById ("xname").value = "X";
+    document.getElementById ("oname").value = "O";
+}
+	
 setInterval(function () {
     if (turn == "0") {
         document.getElementById ("letters").innerHTML = document.getElementById ("xname").value;
