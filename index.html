@@ -152,8 +152,8 @@ input {
     </style>
     <script>
       var turn = 0;
-      var xname = localStorage.setItem ("xname","X");
-      var oname = localStorage.setItem ("oname","O");
+      var xname = localStorage.getItem ("xname");
+      var oname = localStorage.getItem ("oname");
 // ----------------------- //
 
 function click1 () {
@@ -307,11 +307,11 @@ function cancel () {
     document.getElementById ("custom").style.pointerEvents = "none";
 }
 
-	    function saved () {
-		localStorage.setItem ("xname",xname);
-    localStorage.setItem ("oname",oname);
-		    cancel();
-	    }
+function saved () {
+    localStorage.setItem ("xname",document.getElementById ("xname").value);
+    localStorage.setItem ("oname",document.getElementById ("oname").value);
+    cancel();
+}
     </script>
     </body>
 </html>
