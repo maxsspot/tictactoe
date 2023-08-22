@@ -23,6 +23,8 @@
             <button id = "save" onclick = "saved()" disabled>Save</button>
             <br>
             <button id = "cancel" onclick = "cancel()">Cancel</button>
+		<br>
+		<a>Reset</a>
         </div>
         <br>
         <br>
@@ -86,17 +88,21 @@ button:active {
     justify-content: center;
 }
 
-#customnames {
+#customnames, a {
     left: 50%; 
     transform: translateX(-50%);
     position:fixed;
     bottom:25px;
     color:blue;
     cursor:pointer;
-    font-size:24px;
+    font-size:22px;
 }
 
 #customnames:hover {
+    text-decoration:underline;
+}
+
+a:hover {
     text-decoration:underline;
 }
 
