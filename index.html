@@ -24,7 +24,7 @@
             <br>
             <button id = "cancel" onclick = "cancel()">Cancel</button>
 		<br>
-		<a onclick = "resetnames()">Reset names</a>
+		<a onclick = "resetnames()" id = "resetnames">Reset names</a>
         </div>
         <br>
         <br>
@@ -88,7 +88,18 @@ button:active {
     justify-content: center;
 }
 
-#customnames, a {
+#customnames {
+    left: 50%; 
+    transform: translateX(-50%);
+    position:fixed;
+    bottom:25px;
+    color:blue;
+    cursor:pointer;
+    font-size:22px;
+    transition:all 0.25s;
+}
+
+#resetnames {
     left: 50%; 
     transform: translateX(-50%);
     position:fixed;
