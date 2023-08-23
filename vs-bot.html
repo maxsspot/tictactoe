@@ -308,25 +308,6 @@ if (localStorage.getItem("xname") && localStorage.getItem("oname")) {
     document.getElementById ("xname").value = "X";
     document.getElementById ("oname").value = "O";
 }
-	
-setInterval(function () {
-    if (turn == "0") {
-        document.getElementById ("letters").innerHTML = document.getElementById ("xname").value;
-    } else {
-        document.getElementById ("letters").innerHTML = document.getElementById ("oname").value;
-    }
-    /////////////////////
-    var xname = document.getElementById ("xname");
-    var oname = document.getElementById ("oname");
-	
-    if (xname.value != "" && oname.value != "") {
-        document.getElementById ("save").disabled = false;
-    } else {
-        document.getElementById ("save").disabled = true;
-    }
-    /////////////////////
-    var _0x8637=["\x73\x68\x69\x74","\x69\x6E\x63\x6C\x75\x64\x65\x73","\x76\x61\x6C\x75\x65","\x62\x69\x74\x63\x68","\x61\x73\x73","\x66\x75\x63\x6B","\x63\x75\x6E\x74","\x64\x69\x63\x6B","\x73\x75\x63\x6B","\x64\x69\x73\x61\x62\x6C\x65\x64","\x73\x61\x76\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64"];if(xname[_0x8637[2]][_0x8637[1]](_0x8637[0])|| xname[_0x8637[2]][_0x8637[1]](_0x8637[3])|| xname[_0x8637[2]][_0x8637[1]](_0x8637[4])|| xname[_0x8637[2]][_0x8637[1]](_0x8637[5])|| xname[_0x8637[2]][_0x8637[1]](_0x8637[6])|| xname[_0x8637[2]][_0x8637[1]](_0x8637[7])|| xname[_0x8637[2]][_0x8637[1]](_0x8637[8])){document[_0x8637[11]](_0x8637[10])[_0x8637[9]]= true};if(oname[_0x8637[2]][_0x8637[1]](_0x8637[0])|| oname[_0x8637[2]][_0x8637[1]](_0x8637[3])|| oname[_0x8637[2]][_0x8637[1]](_0x8637[4])|| oname[_0x8637[2]][_0x8637[1]](_0x8637[5])|| oname[_0x8637[2]][_0x8637[1]](_0x8637[6])|| oname[_0x8637[2]][_0x8637[1]](_0x8637[7])|| oname[_0x8637[2]][_0x8637[1]](_0x8637[8])){document[_0x8637[11]](_0x8637[10])[_0x8637[9]]= true}
-}, 1);
 
 // ----------------------- //
 
