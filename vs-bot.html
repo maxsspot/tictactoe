@@ -175,7 +175,7 @@ input {
       var turn = 0;
       
 // ----------------------- //
-
+var one = Math.floor(Math.random() * 2);
 function click1 () {
     if (turn == "0") {
         document.getElementById ("b1").innerHTML = "X";
@@ -183,7 +183,7 @@ function click1 () {
         document.getElementById ("b1").style.color = "black";
     }
 
-    var one = Math.floor(Math.random() * 2);
+    
     
     if (one == "0" && document.getElementById ("b3").textContent === "") {
 	setTimeout(function() {
@@ -200,6 +200,16 @@ function click2 () {
         document.getElementById ("b2").innerHTML = "X";
         document.getElementById ("b2").disabled = true;
         document.getElementById ("b2").style.color = "black";
+    }
+
+    if (one == "0" && document.getElementById ("b3").textContent === "") {
+	setTimeout(function() {
+  		document.getElementById ("b2").innerHTML = "O";
+	}, 500);
+    } else {
+	setTimeout(function() {
+  		document.getElementById ("b7").innerHTML = "O";
+	}, 500);
     }
 }
 function click3 () {
