@@ -214,8 +214,10 @@ input {
       var x = document.getElementById ("xname");
       var o = document.getElementById ("oname");
       var win = false;
+      var moves = 0;
 // ----------------------- //
 function checkwin () {
+	moves++;
 	if (b1.textContent === "X" && b2.textContent === "X" && b3.textContent === "X") {
 		b1.style.fontWeight = "bold";b2.style.fontWeight = "bold";b3.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
@@ -312,8 +314,7 @@ function checkwin () {
 		win = true;
 	}
 
-	const allCellsFilled = Array.from(Array(9), (_, i) => document.getElementById("b" + (i + 1)).textContent !== "");
-    if (allCellsFilled && !win) {
+    if (moves => 9 && !win) {
         turntext.innerHTML = "It's a draw!";
     }
 }
