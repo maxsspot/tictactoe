@@ -190,9 +190,15 @@ function click1 () {
     }
 
     var one = Math.floor(Math.random() * 2);
-    console.log(one);
+    
     if (one == "0" && document.getElementById ("b3").innerHTML == "") {
-	document.getElementById ("b3").innerHTML = "X";
+	setTimeout(function() {
+  		document.getElementById ("b3").innerHTML = "O";
+	}, 500);
+    } else if (one == "0" && document.getElementById ("b6").innerHTML == "") {
+	setTimeout(function() {
+  		document.getElementById ("b6").innerHTML = "O";
+	}, 500);
     }
 }
 function click2 () {
