@@ -294,6 +294,11 @@ function checkwin () {
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
 		turntext.innerHTML = o.value + " wins!";
 	}
+
+	const allCellsFilled = Array.from(Array(9), (_, i) => document.getElementById("b" + (i + 1)).textContent !== "");
+    if (allCellsFilled) {
+        turntext.innerHTML = "It's a draw!";
+    }
 }
 	    
 function click1 () {
