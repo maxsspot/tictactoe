@@ -31,7 +31,7 @@
         <br>
 		<h1 style = "border-bottom:black solid 1px;width:200px;margin:auto;">TIC-TAC-TOE</h1>
         <br>
-        <h2 style = "border-bottom:black solid 1px;border-top:black solid 1px;width:150px;margin:auto;"><span id = "letters">X</span>'s turn!</h2>
+        <h2 style = "border-bottom:black solid 1px;border-top:black solid 1px;width:150px;margin:auto;" id = "turn"><span id = "letters">X</span>'s turn!</h2>
         <br>
         <br>
         <div id = "row1">
@@ -211,11 +211,13 @@ input {
       var b7 = document.getElementById ("b7");
       var b8 = document.getElementById ("b8");
       var b9 = document.getElementById ("b9");
+      var turntext = document.getElementById ("turn");
 // ----------------------- //
 function checkwin () {
 	if (b1.textContent === "X" && b2.textContent === "X" && b3.textContent === "X") {
 		b1.style.fontWeight = "bold";b2.style.fontWeight = "bold";b3.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
+		turntext.innerHTML = xname + " wins!";
 	} else if (b4.textContent === "X" && b5.textContent === "X" && b6.textContent === "X") {
 		b4.style.fontWeight = "bold";b5.style.fontWeight = "bold";b6.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
