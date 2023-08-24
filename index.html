@@ -3,58 +3,14 @@
 	<head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>TIC-TAC-TOE</title>
+		<title>TIC-TAC-TOE | Menu</title>
 	</head>
 	<body>
-        <div id = "custom">
-            <br>
-            <br>
-            <h1>CUSTOM NAMES</h1>
-            <br>
-            <br>
-            <h3>X's custom name</h3>
-            <input autocomplete = "off" id = "xname" placeholder="X's custom name..." />
-            <br>
-            <br>
-            <h3>O's custom name</h3>
-            <input autocomplete = "off" id = "oname" placeholder="O's custom name..." />
-            <br>
-            <br>
-            <br>
-            <button id = "save" onclick = "saved()">Save</button>
-            <br>
-            <button id = "cancel" onclick = "cancel()">Cancel</button>
-		<br>
-		<a onclick = "resetnames()" id = "resetnames">RESET NAMES</a>
-        </div>
-        <br>
-        <br>
+        
 		<h1 style = "border-bottom:black solid 1px;width:200px;margin:auto;">TIC-TAC-TOE</h1>
-        <br>
-        <h2 style = "border-bottom:black solid 1px;border-top:black solid 1px;width:150px;margin:auto;" id = "turn"><span id = "letters">X</span>'s turn!</h2>
-        <br>
-        <br>
-        <div id = "row1">
-            <button id = "b1" onclick = "click1()" style = "border-right:grey solid 1px;border-bottom:grey solid 1px;"></button>
-            <button id = "b2" onclick = "click2()" style = "border-right:grey solid 1px;border-bottom:grey solid 1px;"></button>
-            <button id = "b3" onclick = "click3()" style = "border-bottom:grey solid 1px;"></button>
-        </div>
-        <div id = "row2">
-            <button id = "b4" onclick = "click4()" style = "border-right:grey solid 1px;border-bottom:grey solid 1px;"></button>
-            <button id = "b5" onclick = "click5()" style = "border-right:grey solid 1px;border-bottom:grey solid 1px;"></button>
-            <button id = "b6" onclick = "click6()" style = "border-bottom:grey solid 1px;"></button>
-        </div>
-        <div id = "row2">
-            <button id = "b7" onclick = "click7()" style = "border-right:grey solid 1px;"></button>
-            <button id = "b8" onclick = "click8()" style = "border-right:grey solid 1px;"></button>
-            <button id = "b9" onclick = "click9()"></button>
-        </div>
-	<br>
-	<br>
-	<a onclick = "location.reload();">RESTART GAME</a>
+        	<br>
 		<br>
-		<br>
-        <a id = "customnames" onclick = "custom()">CUSTOM NAMES</a>
+		<a href = "/same-device">Play against player (same device)</a>
     <style>
       * {
     margin:0;
