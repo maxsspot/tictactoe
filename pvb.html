@@ -298,7 +298,7 @@ function click1 () {
         document.getElementById ("b1").disabled = true;
         document.getElementById ("b1").style.color = "black";
 
-    if (document.getElementById("b1").innerHTML === "") {
+    if (document.getElementById("b1").innerHTML == "") {
 	setTimeout(() => {
   		document.getElementById("b1").innerHTML = "O";
 		checkwin();
