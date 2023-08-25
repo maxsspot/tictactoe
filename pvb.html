@@ -34,7 +34,6 @@
 		<br>
 		<br>
 	<a href = "/" style="border-top:blue solid 1px;border-bottom:blue solid 1px;">RETURN TO MENU</a>
-        <a id = "customnames" onclick = "custom()">CUSTOM NAMES</a>
     <style>
       * {
     margin:0;
@@ -175,11 +174,6 @@ input {
     </style>
     <script>
       var turn = 0;
-      var xname = localStorage.getItem ("xname");
-      var oname = localStorage.getItem ("oname");
-
-      document.getElementById ("xname").value = localStorage.getItem ("xname");
-      document.getElementById ("oname").value = localStorage.getItem ("oname");
 
       var b1 = document.getElementById ("b1");
       var b2 = document.getElementById ("b2");
@@ -191,8 +185,6 @@ input {
       var b8 = document.getElementById ("b8");
       var b9 = document.getElementById ("b9");
       var turntext = document.getElementById ("turn");
-      var x = document.getElementById ("xname");
-      var o = document.getElementById ("oname");
 
       var win = false;
       var moves = 0;
@@ -308,13 +300,15 @@ function click1 () {
         document.getElementById ("b1").disabled = true;
         document.getElementById ("b1").style.color = "black";
         turn = 1;
-    } else {
-        document.getElementById ("b1").innerHTML = "O";
-        document.getElementById ("b1").disabled = true;
-        document.getElementById ("b1").style.color = "black";
-        turn = 0;
     }
 
+    if (b1.innerHTML === "") {
+	setTimeout(() => {
+  		b1.innerHTML = "O";
+		checkwin();
+	}, 500);
+    }
+	
     checkwin();
 }
 function click2 () {
