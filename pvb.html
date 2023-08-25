@@ -448,6 +448,29 @@ function click6 () {
         document.getElementById ("b6").innerHTML = "X";
         document.getElementById ("b6").disabled = true;
         document.getElementById ("b6").style.color = "black";
+
+	if (document.getElementById("b3").innerHTML == "") {
+	setTimeout(() => {
+  		document.getElementById("b8").innerHTML = "O";
+		document.getElementById("b8").disabled = true;
+		document.getElementById("b8").style.color = "black";
+		checkwin();
+	}, 500);
+    } else if (document.getElementById("b8").innerHTML == "") {
+	setTimeout(() => {
+  		document.getElementById("b7").innerHTML = "O";
+		document.getElementById("b7").disabled = true;
+		document.getElementById("b7").style.color = "black";
+		checkwin();
+	}, 500);
+    } else {
+	setTimeout(() => {
+  		document.getElementById("b2").innerHTML = "O";
+		document.getElementById("b2").disabled = true;
+		document.getElementById("b2").style.color = "black";
+		checkwin();
+	}, 500);
+    }
 	
     checkwin();
 }
