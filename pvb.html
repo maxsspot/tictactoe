@@ -3,7 +3,7 @@
 	<head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>TIC-TAC-TOE | PvB</title>
+		<title>TIC-TAC-TOE | PvC</title>
 	</head>
 	<body>
         <br>
@@ -243,46 +243,46 @@ function checkwin () {
 	if (b1.textContent === "O" && b2.textContent === "O" && b3.textContent === "O") {
 		b1.style.fontWeight = "bold";b2.style.fontWeight = "bold";b3.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
-		turntext.innerHTML = "O wins!";
+		turntext.innerHTML = "Computer wins!";
 		win = true;
 	} else if (b4.textContent === "O" && b5.textContent === "O" && b6.textContent === "O") {
 		b4.style.fontWeight = "bold";b5.style.fontWeight = "bold";b6.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
-		turntext.innerHTML = "O wins!";
+		turntext.innerHTML = "Computer wins!";
 		win = true;
 	} else if (b7.textContent === "O" && b8.textContent === "O" && b9.textContent === "O") {
 		b7.style.fontWeight = "bold";b8.style.fontWeight = "bold";b9.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
-		turntext.innerHTML = "O wins!";
+		turntext.innerHTML = "Computer wins!";
 		win = true;
 	} 
 	//////////
 	else if (b1.textContent === "O" && b4.textContent === "O" && b7.textContent === "O") {
 		b1.style.fontWeight = "bold";b4.style.fontWeight = "bold";b7.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
-		turntext.innerHTML = "O wins!";
+		turntext.innerHTML = "Computer wins!";
 		win = true;
 	} else if (b2.textContent === "O" && b5.textContent === "O" && b8.textContent === "O") {
 		b2.style.fontWeight = "bold";b5.style.fontWeight = "bold";b8.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
-		turntext.innerHTML = "O wins!";
+		turntext.innerHTML = "Computer wins!";
 		win = true;
 	} else if (b3.textContent === "O" && b6.textContent === "O" && b9.textContent === "O") {
 		b3.style.fontWeight = "bold";b6.style.fontWeight = "bold";b9.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
-		turntext.innerHTML = "O wins!";
+		turntext.innerHTML = "Computer wins!";
 		win = true;
 	}
 	//////////
 	else if (b1.textContent === "O" && b5.textContent === "O" && b9.textContent === "O") {
 		b1.style.fontWeight = "bold";b5.style.fontWeight = "bold";b9.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
-		turntext.innerHTML = "O wins!";
+		turntext.innerHTML = "Computer wins!";
 		win = true;
 	} else if (b3.textContent === "O" && b5.textContent === "O" && b7.textContent === "O") {
 		b3.style.fontWeight = "bold";b5.style.fontWeight = "bold";b7.style.fontWeight = "bold";
 		b1.disabled=true;b2.disabled=true;b3.disabled=true;b4.disabled=true;b5.disabled=true;b6.disabled=true;b7.disabled=true;b8.disabled=true;b9.disabled=true;
-		turntext.innerHTML = "O wins!";
+		turntext.innerHTML = "Computer wins!";
 		win = true;
 	}
 	
@@ -302,12 +302,14 @@ function click1 () {
 	setTimeout(() => {
   		document.getElementById("b3").innerHTML = "O";
 		document.getElementById("b3").disabled = true;
+		document.getElementById("b3").style.color = "black";
 		checkwin();
 	}, 500);
     } else {
 	setTimeout(() => {
   		document.getElementById("b6").innerHTML = "O";
 		document.getElementById("b6").disabled = true;
+		document.getElementById("b6").style.color = "black";
 		checkwin();
 	}, 500);
     }
@@ -324,12 +326,14 @@ function click2 () {
 	setTimeout(() => {
   		document.getElementById("b9").innerHTML = "O";
 		document.getElementById("b9").disabled = true;
+		document.getElementById("b9").style.color = "black";
 		checkwin();
 	}, 500);
     } else {
 	setTimeout(() => {
   		document.getElementById("b6").innerHTML = "O";
 		document.getElementById("b6").disabled = true;
+		document.getElementById("b6").style.color = "black";
 		checkwin();
 	}, 500);
     }
@@ -345,12 +349,14 @@ function click3 () {
 	setTimeout(() => {
   		document.getElementById("b6").innerHTML = "O";
 		document.getElementById("b6").disabled = true;
+		document.getElementById("b6").style.color = "black";
 		checkwin();
 	}, 500);
     } else {
 	setTimeout(() => {
   		document.getElementById("b7").innerHTML = "O";
 		document.getElementById("b7").disabled = true;
+		document.getElementById("b7").style.color = "black";
 		checkwin();
 	}, 500);
     }
