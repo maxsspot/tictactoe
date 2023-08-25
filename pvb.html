@@ -302,9 +302,9 @@ function click1 () {
         turn = 1;
     }
 
-    if (b1.innerHTML === "") {
+    if (document.getElementById("b1").innerHTML === "") {
 	setTimeout(() => {
-  		b1.innerHTML = "O";
+  		document.getElementById("b1").innerHTML = "O";
 		checkwin();
 	}, 500);
     }
