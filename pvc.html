@@ -299,11 +299,12 @@ function click1 () {
         document.getElementById ("b1").style.color = "black";
 
 if(botcango===true) {
-    if (document.getElementById("b3").innerHTML == "") {
+    var rannum1 = + Math.floor(Math.random() * 10);
+    if (document.getElementById("b"+rannum1).innerHTML == "") {
 	setTimeout(() => {
-  		document.getElementById("b3").innerHTML = "O";
-		document.getElementById("b3").disabled = true;
-		document.getElementById("b3").style.color = "black";
+  		document.getElementById("b"+rannum1).innerHTML = "O";
+		document.getElementById("b"+rannum1).disabled = true;
+		document.getElementById("b"+rannum1).style.color = "black";
 		checkwin();
 	}, 500);
     } else if (document.getElementById("b6").innerHTML == "") {
@@ -396,11 +397,12 @@ function click4 () {
         document.getElementById ("b4").style.color = "black";
 
 if(botcango===true) {
-	if (document.getElementById("b6").innerHTML == "") {
+	var rannum2 = + Math.floor(Math.random() * 10);
+	if (document.getElementById("b"+rannum2).innerHTML == "") {
 	setTimeout(() => {
-  		document.getElementById("b6").innerHTML = "O";
-		document.getElementById("b6").disabled = true;
-		document.getElementById("b6").style.color = "black";
+  		document.getElementById("b"+rannum2).innerHTML = "O";
+		document.getElementById("b"+rannum2).disabled = true;
+		document.getElementById("b"+rannum2).style.color = "black";
 		checkwin();
 	}, 500);
     } else if (document.getElementById("b7").innerHTML == "") {
