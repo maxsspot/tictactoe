@@ -303,6 +303,11 @@ function click1 () {
   		document.getElementById("b3").innerHTML = "O";
 		checkwin();
 	}, 500);
+    } else {
+	setTimeout(() => {
+  		document.getElementById("b6").innerHTML = "O";
+		checkwin();
+	}, 500);
     }
 	
     checkwin();
@@ -313,6 +318,18 @@ function click2 () {
         document.getElementById ("b2").disabled = true;
         document.getElementById ("b2").style.color = "black";
 
+	if (document.getElementById("b9").innerHTML == "") {
+	setTimeout(() => {
+  		document.getElementById("b9").innerHTML = "O";
+		checkwin();
+	}, 500);
+    } else {
+	setTimeout(() => {
+  		document.getElementById("b6").innerHTML = "O";
+		checkwin();
+	}, 500);
+    }
+	
     checkwin();
 }
 function click3 () {
