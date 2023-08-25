@@ -10,7 +10,7 @@
         <br>
 		<h1 style = "border-bottom:black solid 1px;width:200px;margin:auto;">TIC-TAC-TOE</h1>
         <br>
-        <h2 style = "border-bottom:black solid 1px;border-top:black solid 1px;width:150px;margin:auto;" id = "turn"><span id = "letters">X</span>'s turn!</h2>
+        <h2 style = "border-bottom:black solid 1px;border-top:black solid 1px;width:200px;margin:auto;" id = "turn"><span id = "letters">X</span>'s turn!</h2>
         <br>
         <br>
         <div id = "row1">
@@ -372,12 +372,14 @@ function click4 () {
 	setTimeout(() => {
   		document.getElementById("b6").innerHTML = "O";
 		document.getElementById("b6").disabled = true;
+		document.getElementById("b6").style.color = "black";
 		checkwin();
 	}, 500);
     } else {
 	setTimeout(() => {
   		document.getElementById("b7").innerHTML = "O";
 		document.getElementById("b7").disabled = true;
+		document.getElementById("b7").style.color = "black";
 		checkwin();
 	}, 500);
     }
@@ -388,6 +390,22 @@ function click5 () {
         document.getElementById ("b5").innerHTML = "X";
         document.getElementById ("b5").disabled = true;
         document.getElementById ("b5").style.color = "black";
+
+	if (document.getElementById("b3").innerHTML == "") {
+	setTimeout(() => {
+  		document.getElementById("b3").innerHTML = "O";
+		document.getElementById("b3").disabled = true;
+		document.getElementById("b3").style.color = "black";
+		checkwin();
+	}, 500);
+    } else {
+	setTimeout(() => {
+  		document.getElementById("b9").innerHTML = "O";
+		document.getElementById("b9").disabled = true;
+		document.getElementById("b9").style.color = "black";
+		checkwin();
+	}, 500);
+    }
 
     checkwin();
 }
