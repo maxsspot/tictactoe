@@ -430,12 +430,13 @@ function click5 () {
         document.getElementById ("b5").style.color = "black";
 
 if(botcango===true) {
-	var rannum3 = + Math.floor(Math.random() * 10);
+	var rannum3 = [1,2,3,4,6,7,8,9]
+	var picked = rannum3[Math.floor(Math.random()*rannum3.length)];
 	if (document.getElementById("b"+rannum3).innerHTML == "") {
 	setTimeout(() => {
-  		document.getElementById("b"+rannum3).innerHTML = "O";
-		document.getElementById("b"+rannum3).disabled = true;
-		document.getElementById("b"+rannum3).style.color = "black";
+  		document.getElementById("b"+picked).innerHTML = "O";
+		document.getElementById("b"+picked).disabled = true;
+		document.getElementById("b"+picked).style.color = "black";
 		checkwin();
 	}, 500);
     } else if (document.getElementById("b8").innerHTML == "") {
