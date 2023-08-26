@@ -432,7 +432,7 @@ function click5 () {
 if(botcango===true) {
 	var rannum3 = [1,2,3,4,6,7,8,9]
 	var picked = rannum3[Math.floor(Math.random()*rannum3.length)];
-	if (document.getElementById("b"+rannum3).innerHTML == "") {
+	if (document.getElementById("b"+picked).innerHTML == "") {
 	setTimeout(() => {
   		document.getElementById("b"+picked).innerHTML = "O";
 		document.getElementById("b"+picked).disabled = true;
