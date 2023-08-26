@@ -331,10 +331,12 @@ function click2 () {
 
 setTimeout(() => {
 if(botcango===true) {
-	if (document.getElementById("b9").innerHTML == "") {
-  		document.getElementById("b9").innerHTML = "O";
-		document.getElementById("b9").disabled = true;
-		document.getElementById("b9").style.color = "black";
+	var rannum35 = [3,5]
+	var picked35 = rannum35[Math.floor(Math.random()*rannum35.length)];
+	if (document.getElementById("b"+picked35).innerHTML == "") {
+  		document.getElementById("b"+picked35).innerHTML = "O";
+		document.getElementById("b"+picked35).disabled = true;
+		document.getElementById("b"+picked35).style.color = "black";
 		checkwin();
     } else if (document.getElementById("b6").innerHTML == "") {
 	
