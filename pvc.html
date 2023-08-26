@@ -300,7 +300,7 @@ function click1 () {
 
 setTimeout(() => {
 if(botcango===true) {
-    var rannum1 = + Math.floor(Math.random() * 10);
+    var rannum1 = Math.floor(Math.random() * 10);
     if (document.getElementById("b"+rannum1).innerHTML == "") {
   		document.getElementById("b"+rannum1).innerHTML = "O";
 		document.getElementById("b"+rannum1).disabled = true;
@@ -318,8 +318,8 @@ if(botcango===true) {
 		document.getElementById("b8").style.color = "black";
 		checkwin();
     }
-}, 500);
 }
+}, 500);
 	
     checkwin();
 }
