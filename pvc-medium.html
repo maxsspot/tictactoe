@@ -300,23 +300,29 @@ function click1 () {
 
 setTimeout(() => {
 if(botcango===true) {
-
-    if (document.getElementById("b7").innerHTML == "") {
-  		document.getElementById("b7").innerHTML = "O";
-		document.getElementById("b7").disabled = true;
-		document.getElementById("b7").style.color = "black";
+	/*var rannum3 = [6,8,9]
+	var picked = rannum3[Math.floor(Math.random()*rannum3.length)];*/
+	if (b9.innerHTML == "X" && b5.innerHTML == "X") {
+	
+  		document.getElementById("b2").innerHTML = "O";
+		document.getElementById("b2").disabled = true;
+		document.getElementById("b2").style.color = "black";
 		checkwin();
-
-    } else if (document.getElementById("b6").innerHTML == "") {
-  		document.getElementById("b6").innerHTML = "O";
-		document.getElementById("b6").disabled = true;
-		document.getElementById("b6").style.color = "black";
-		checkwin();
+	
     } else if (document.getElementById("b8").innerHTML == "") {
+	
   		document.getElementById("b8").innerHTML = "O";
 		document.getElementById("b8").disabled = true;
 		document.getElementById("b8").style.color = "black";
 		checkwin();
+	
+    } else if (document.getElementById("b2").innerHTML == "") {
+	
+  		document.getElementById("b2").innerHTML = "O";
+		document.getElementById("b2").disabled = true;
+		document.getElementById("b2").style.color = "black";
+		checkwin();
+	
     }
 }
 }, 500);
