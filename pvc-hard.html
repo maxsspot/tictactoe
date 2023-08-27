@@ -294,13 +294,19 @@ function checkwin () {
 }
 
 function gocomputer () {
+   setTimeout(function(){
 	if(botcango===true) {
 		moves++;
 		
 		if (b1.innerHTML === "X" && b2.innerHTML === "X") {
 			b3.innerHTML = "O";b3.style.color="Black";b3.disabled=true;
+		} else if (b3.innerHTML === "X" && b2.innerHTML === "X") {
+			b1.innerHTML = "O";b1.style.color="Black";b1.disabled=true;
+		} if (b1.innerHTML === "X" && b3.innerHTML === "X") {
+			b2.innerHTML = "O";b2.style.color="Black";b2.disabled=true;
 		}
 	}
+   }, 500);
 }
 
 function click1 () {
