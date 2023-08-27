@@ -302,9 +302,17 @@ function gocomputer () {
 			b3.innerHTML = "O";b3.style.color="Black";b3.disabled=true;
 		} else if (b3.innerHTML === "X" && b2.innerHTML === "X") {
 			b1.innerHTML = "O";b1.style.color="Black";b1.disabled=true;
-		} if (b1.innerHTML === "X" && b3.innerHTML === "X") {
+		} else if (b1.innerHTML === "X" && b3.innerHTML === "X") {
 			b2.innerHTML = "O";b2.style.color="Black";b2.disabled=true;
-		}
+		} 
+		////////////////////
+		else if (b1.innerHTML === "X" && b4.innerHTML === "X") {
+			b5.innerHTML = "O";b5.style.color="Black";b5.disabled=true;
+		} else if (b7.innerHTML === "X" && b4.innerHTML === "X") {
+			b1.innerHTML = "O";b1.style.color="Black";b1.disabled=true;
+		} else if (b1.innerHTML === "X" && b7.innerHTML === "X") {
+			b4.innerHTML = "O";b4.style.color="Black";b4.disabled=true;
+		} 
 	}
    }, 500);
 }
