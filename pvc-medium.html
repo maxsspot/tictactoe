@@ -382,10 +382,14 @@ function gocomputer() {
                 b6.disabled = true;
             }
             // ------ //
-            else {
-                b5.innerHTML = "O";
-                b5.style.color = "Black";
-                b5.disabled = true;
+            for (let i = 1; i <= 9; i++) {
+                const cell = document.getElementById("b" + i);
+                if (cell.innerHTML === "") {
+                    cell.innerHTML = "O";
+                    cell.style.color = "Black";
+                    cell.disabled = true;
+                    break; // Break after placing O in the first available spot
+                }
             }
         }
     }, 500);
