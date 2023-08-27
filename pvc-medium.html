@@ -396,6 +396,20 @@ function gocomputer() {
                 b5.disabled = true;
             }
 	    // ------ //
+	    else if (b3.innerHTML === "X" && b5.innerHTML === "X") {
+                b7.innerHTML = "O";
+                b7.style.color = "Black";
+                b7.disabled = true;
+            } else if (b5.innerHTML === "X" && b7.innerHTML === "X") {
+                b3.innerHTML = "O";
+                b3.style.color = "Black";
+                b3.disabled = true;
+            } else if (b7.innerHTML === "X" && b3.innerHTML === "X") {
+                b5.innerHTML = "O";
+                b5.style.color = "Black";
+                b5.disabled = true;
+            }
+	    // ------ //
 	    else {
             for (let i = 1; i <= 9; i++) {
                 const cell = document.getElementById("b" + i);
