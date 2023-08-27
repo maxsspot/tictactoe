@@ -295,7 +295,8 @@ function checkwin () {
 
 function gocomputer () {
 	if(botcango===true) {
-
+		moves++;
+		
 		if (b1.innerHTML == "X" && b2.innerHTML == "X") {
 			b3.innerHTML == "O";b3.style.color="Black";b3.disabled=true;
 		}
@@ -315,6 +316,7 @@ function click2 () {
         document.getElementById ("b2").disabled = true;
         document.getElementById ("b2").style.color = "black";
 
+    gocomputer();
     checkwin();
 }
 function click3 () {
@@ -322,6 +324,7 @@ function click3 () {
         document.getElementById ("b3").disabled = true;
         document.getElementById ("b3").style.color = "black";
 
+    gocomputer();
     checkwin();
 }
 function click4 () {
