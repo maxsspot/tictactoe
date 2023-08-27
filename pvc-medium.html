@@ -380,7 +380,23 @@ function gocomputer() {
                 b6.innerHTML = "O";
                 b6.style.color = "Black";
                 b6.disabled = true;
-            } else {
+            }
+	    /////////// Diaganol combinations //////////
+            else if (b1.innerHTML === "X" && b5.innerHTML === "X") {
+                b9.innerHTML = "O";
+                b9.style.color = "Black";
+                b9.disabled = true;
+            } else if (b5.innerHTML === "X" && b9.innerHTML === "X") {
+                b1.innerHTML = "O";
+                b1.style.color = "Black";
+                b1.disabled = true;
+            } else if (b1.innerHTML === "X" && b9.innerHTML === "X") {
+                b5.innerHTML = "O";
+                b5.style.color = "Black";
+                b5.disabled = true;
+            }
+	    // ------ //
+	    else {
             for (let i = 1; i <= 9; i++) {
                 const cell = document.getElementById("b" + i);
                 if (cell.innerHTML === "") {
