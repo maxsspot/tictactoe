@@ -380,8 +380,7 @@ function gocomputer() {
                 b6.innerHTML = "O";
                 b6.style.color = "Black";
                 b6.disabled = true;
-            }
-            // ------ //
+            } else {
             for (let i = 1; i <= 9; i++) {
                 const cell = document.getElementById("b" + i);
                 if (cell.innerHTML === "") {
@@ -391,6 +390,7 @@ function gocomputer() {
                     break; // Break after placing O in the first available spot
                 }
             }
+	  }
         }
     }, 500);
 }
