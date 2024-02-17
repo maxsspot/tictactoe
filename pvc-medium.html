@@ -301,16 +301,16 @@ function click1 () {
 setTimeout(() => {
 if(botcango===true) {
 
-    if (document.getElementById("b7").innerHTML == "") {
-  		document.getElementById("b7").innerHTML = "O";
-		document.getElementById("b7").disabled = true;
-		document.getElementById("b7").style.color = "black";
-		checkwin();
-
-    } else if (document.getElementById("b6").innerHTML == "") {
+    if (document.getElementById("b6").innerHTML == "") {
   		document.getElementById("b6").innerHTML = "O";
 		document.getElementById("b6").disabled = true;
 		document.getElementById("b6").style.color = "black";
+		checkwin();
+
+    } else if (document.getElementById("b7").innerHTML == "") {
+  		document.getElementById("b7").innerHTML = "O";
+		document.getElementById("b7").disabled = true;
+		document.getElementById("b7").style.color = "black";
 		checkwin();
     }
 }
