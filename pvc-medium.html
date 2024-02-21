@@ -413,7 +413,6 @@ if (botcango) {
 }
 
 // ----------------------- //
-var canblock = true;
 function botsTurn () {
 	if (botcango && canblock) {		
 		// Horizontal combinations. Row 1
@@ -421,40 +420,40 @@ function botsTurn () {
 			b3.textContent = "O";
 			b3.disabled = "true";
 			b3.style.color = "black";
-			canblock=true;
+			
 		} else if (b3.innerHTML == "X" && b2.innerHTML == "X") {
 			b1.textContent = "O";
 			b1.disabled = "true";
 			b1.style.color = "black";
-			canblock=true;
+			
 		// Row 2
 		} else if (b4.innerHTML == "X" && b5.innerHTML == "X") {
 			b6.textContent = "O";
 			b6.disabled = "true";
 			b6.style.color = "black";
-			canblock=true;
+			
 		} else if (b6.innerHTML == "X" && b5.innerHTML == "X") {
 			b4.textContent = "O";
 			b4.disabled = "true";
 			b4.style.color = "black";
-			canblock=true;
+			
 		// Row 3
 		} else if (b7.innerHTML == "X" && b8.innerHTML == "X") {
 			b9.textContent = "O";
 			b9.disabled = "true";
 			b9.style.color = "black";
-			canblock=true;
+			
 		} else if (b9.innerHTML == "X" && b8.innerHTML == "X") {
 			b7.textContent = "O";
 			b7.disabled = "true";
 			b7.style.color = "black";
-			canblock=true;
+			
 		// Vertical combinations. Column 1
 		} if (b1.innerHTML == "X" && b4.innerHTML == "X") {
 			b7.textContent = "O";
 			b7.disabled = "true";
 			b7.style.color = "black";
-			canblock=true;
+			
 		} else if (b7.innerHTML == "X" && b4.innerHTML == "X") {
 			b1.textContent = "O";
 			b1.disabled = "true";
@@ -464,23 +463,23 @@ function botsTurn () {
 			b8.textContent = "O";
 			b8.disabled = "true";
 			b8.style.color = "black";
-			canblock=true;
+			
 		} else if (b8.innerHTML == "X" && b5.innerHTML == "X") {
 			b2.textContent = "O";
 			b2.disabled = "true";
 			b2.style.color = "black";
-			canblock=true;
+			
 		// Column 3
 		} else if (b3.innerHTML == "X" && b6.innerHTML == "X") {
 			b9.textContent = "O";
 			b9.disabled = "true";
 			b9.style.color = "black";
-			canblock=true;
+			
 		} else if (b9.innerHTML == "X" && b6.innerHTML == "X") {
 			b3.textContent = "O";
 			b3.disabled = "true";
 			b3.style.color = "black";
-			canblock=true;
+			
 		
 		} else {
 			canblock=false;
