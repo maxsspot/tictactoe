@@ -413,9 +413,9 @@ if (botcango) {
 }
 
 // ----------------------- //
+var canblock = false;
 function botsTurn () {
-	if (botcango) {
-		canblock = true;
+	if (botcango && canblock) {		
 		// Horizontal combinations. Row 1
 		if (b1.innerHTML == "X" && b2.innerHTML == "X") {
 			b3.textContent = "O";
@@ -470,7 +470,9 @@ function botsTurn () {
 			b3.textContent = "O";
 			b3.disabled = "true";
 			b3.style.color = "black";
+		
 		} else {
+			canblock=false;
 			if (b1.innerHTML == "") {
 				b1.textContent = "O";
 				b1.disabled = "true";
